@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+:root {
+    --title_size: 1.1rem;
+    --parag_size: 1rem;
+    --margenes: 0 5% 0 5%;
+    --poppins: 'Poppins', sans-serif;
+    --clicker: 'Clicker Script', cursive;
+    --color_claro: #FECD84;
+    --color_oscuro: #FEBC5B;
+    --color_secundario: #925028;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+
+
+/* Seccion Uno (Hero) */
+.Seccion_uno {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.fondo--claro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color_claro);
+    width: 100%;
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);
+}
+
+.fondo--oscuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color_oscuro);
+    width: 100%;
+    height: 50vh;
+    clip-path: polygon(80% 0, 100% 0, 100% 65%, 0 100%, 0 30%);
+}
+
+.header {
+    padding: var(--margenes);
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header--logo {
+    height: 80%;
+    align-self: flex-end;
+    z-index: 2;
+}
+
+.header--menuh {
+    width: 1.2rem;
+    z-index: 2;
+}
+
+.header--title {
+    color: #925028;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.title {
+    font-family: var(--clicker);
+    font-size: 5rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.slogan {
+    font-family: var(--poppins);
+    color: var(--color_secundario);
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 2;
+    font-weight: 600;
+}
+
+
+
+/* Seccion Dos (Presentacion) */
+.Seccion_dos {
+    font-family: var(--poppins);
+    color: var(--color_secundario);
+    padding: 10% 10% 0 10%;
+    margin-bottom: 2rem;
+    width: 100vw;
+}
+
+.Seccion_dos h1 {
+    font-size: var(--title_size);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.Seccion_dos p {
+    font-size: var(--parag_size);
+    text-align: left;
+}
+
+
+
+/* Seccion Tres (Productos) */
+.Seccion_tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--margenes);
+    width: 100vw;
+}
+
+.Seccion_tres__card {
+    background-color: var(--color_claro);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 2rem;
+}
+
+.Seccion_tres__card--up {
+    font-family: var(--poppins);
+    padding-bottom: 5%;
+    color: var(--color_secundario);
+}
+
+.Seccion_tres__card--up h2 {
+    text-align: left;
+    font-size: var(--title_size);
+    margin-bottom: 1rem;
+}
+
+.Seccion_tres__card--down {
+    height: 50vw;
+    background-image: url(../img/BD1.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+
+.Seccion_tres__card--down::after {
+    content: 'Ver Galeria';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color_oscuro);
+    border-radius: 0 0 20px 20px;
+    color: var(--color_secundario);
+    text-align: center;
+    width: 100%;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+
+.Seccion_tres__card2 {
+    background-color: var(--color_claro);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 2rem;
+}
+
+.Seccion_tres__card--up2 {
+    font-family: var(--poppins);
+    padding-bottom: 5%;
+    color: var(--color_secundario);
+}
+
+.Seccion_tres__card--up2 h2 {
+    text-align: left;
+    font-size: var(--title_size);
+    margin-bottom: 1rem;
+}
+
+.Seccion_tres__card--down2 {
+    height: 50vw;
+    background-image: url(../img/AR6.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+
+.Seccion_tres__card--down2::after {
+    content: 'Ver Galeria';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color_oscuro);
+    border-radius: 0 0 20px 20px;
+    color: var(--color_secundario);
+    text-align: center;
+    width: 100%;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+
+
+/* Seccion Cuatro (Delivery) */
+.Seccion_cuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    margin-bottom: 2rem;
+}
+
+.Seccion_cuatro--desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_cuatro--title {
+    color: var(--color_secundario);
+    font-family: var(--poppins);
+    text-align: left;
+    font-size: var(--title_size);
+    margin-bottom: 1rem;
+}
+
+.Seccion_cuatro--txt {
+    color: var(--color_secundario);
+    font-family: var(--poppins);
+    text-align: left;
+    font-size: var(--parag_size);
+}
+
+.Seccion_cuatro--bike {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+
+
+/* Seccion Cinco (Contacto) */
+.Seccion_cinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: var(--margenes);
+    color: var(--color_secundario);
+}
+
+.Seccion_cinco--title {
+    font-family: var(--poppins);
+    font-size: var(--title_size);
+    margin-bottom: 1rem;
+    padding: var(--margenes);
+}
+
+.Seccion_cinco__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: var(--margenes);
+    margin-bottom: 2rem;
+}
+
+.Seccion_cinco p {
+    font-family: var(--poppins);
+    font-size: var(--parag_size);
+    padding: var(--margenes);
+
+}
+
+.Seccion_cinco__info a {
+    color: var(--color_secundario);
+    font-family: var(--poppins);
+    font-size: var(--parag_size);
+    margin-right: 1rem;
+}
+
+.Seccion_cinco__info img {
+    width: 2rem;
+}
+
+/* Seccion Footer (Pie de Pagina) */
+.Footer {
+    width: 100vw;
+    height: fit-content;
+    padding: var(--margenes);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_oscuro);
+}
+
+.Footer__redes {
+    display: flex;
+    justify-content: center;
+}
+
+.Footer__redes a {
+    width: 1.5rem;
+    margin: 2rem 1rem 0 1rem;
+}
+
+.Footer__redes--icon {
+    width: 100%;
+}
+
+.Footer--txt {
+    font-family: var(--poppins);
+    color: var(--color_secundario);
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: var(--parag_size);
+    margin-top: 1rem;
+}
+
+.Footer--txt a {
+    color: var(--color_secundario);
+}
