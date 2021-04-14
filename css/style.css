@@ -82,13 +82,6 @@ body {
 }
 
 .title {
-    font-family: var(--clicker);
-    font-size: 5rem;
-    z-index: 2;
-    text-align: center;
-}
-
-.title {
     z-index: 2;
     width: 80%;
 }
@@ -132,7 +125,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1rem 0 1rem;
     width: 100vw;
 }
 
@@ -142,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin-bottom: 2rem;
 }
 
@@ -183,22 +176,13 @@ body {
 }
 
 
-.Seccion_tres2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem 0 2rem;
-    width: 100vw;
-}
-
 .Seccion_tres__card2 {
     background-color: var(--color_claro);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin-bottom: 2rem;
 }
 
