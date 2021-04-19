@@ -20,6 +20,8 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -81,6 +83,23 @@ body {
     background-size: cover;
 }
 
+.header__bar {
+    height: 100%;
+    width: 60vw;
+    font-family: var(--poppins);
+    font-size: 2vw;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9;
+}
+
+.header__bar--btn {
+    text-decoration: none;
+    margin-right: 2vw;
+    color: var(--color_secundario);
+}
+
 .header--title {
     color: #925028;
     height: 100%;
@@ -114,7 +133,7 @@ body {
 .menu__bg {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -110%;
     width: 100vw;
     height: 100vh;
     background-color: var(--color_oscuro);
@@ -238,7 +257,7 @@ body {
     text-align: center;
     width: 100%;
     font-family: var(--poppins);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 4vw;
 }
 
@@ -290,7 +309,7 @@ body {
     text-align: center;
     width: 100%;
     font-family: var(--poppins);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 4vw;
 }
 
@@ -376,10 +395,11 @@ body {
     margin-right: 1rem;
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 .Seccion_cinco__info img {
-    width: 5vw;
+    width: 5.5vw;
 }
 
 
@@ -402,7 +422,7 @@ body {
 }
 
 .Footer__redes a {
-    width: 5vw;
+    width: 5.5vw;
     margin: 2rem 1rem 0 1rem;
 }
 
@@ -436,22 +456,182 @@ body {
     height: 100vh;
 }
 
-.header {
-}
-
-.header--logo {
-}
-
-.header__menuh {
-}
-
 .header__menuh--icon {
+    display: none;
+}
+
+.header__bar {
+    display: flex;
 }
 
 .title {
     width: 60%;
+} 
+
+.menu__bg {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+
+/* Seccion Uno (Hero) */
+.header__menuh--icon {
+    display: none;
+}
+
+.header__bar {
+    display: flex;
 }
 
 .slogan {
+    font-size: 3vw;
 }
+
+
+
+/* Menu Responsive */
+.menu__bg {
+    display: none;
+}
+
+
+
+/* Seccion Dos (Presentacion) */
+.Seccion_dos {
+    margin-bottom: 5%;
+}
+
+.Seccion_dos h1 {
+    font-size: 3vw;
+}
+
+.Seccion_dos p {
+    font-size: 1.5vw;
+}
+
+
+
+/* Seccion Tres (Productos) */
+.Seccion_tres {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Seccion_tres__card {
+    width: 40vw;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.Seccion_tres__card--up {
+    height: 15vw;
+}
+
+.Seccion_tres__card--up2 {
+    height: 15vw;
+}
+
+.Seccion_tres__card--up h2 {
+    font-size: 3vw;
+}
+
+.Seccion_tres__card--up p{
+    font-size: 1.5vw;
+}
+
+.Seccion_tres__card--down {
+    width: 30vw;
+    height: 30vw;
+}
+
+.Seccion_tres__card--down::after {
+    font-size: 3vw;
+}
+
+
+
+.Seccion_tres__card2 {
+    width: 40vw;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.Seccion_tres__card--up2 h2 {
+    font-size: 3vw;
+}
+
+.Seccion_tres__card--up2 p{
+    font-size: 1.5vw;
+}
+
+.Seccion_tres__card--down2 {
+    width: 30vw;
+    height: 30vw;
+}
+
+.Seccion_tres__card--down2::after {
+    font-size: 3vw;
+}
+
+
+
+/* Seccion Cuatro (Delivery) */
+
+.Seccion_cuatro {
+    margin-bottom: 5%;
+}
+
+.Seccion_cuatro--title {
+    font-size: 3vw;
+}
+
+.Seccion_cuatro--txt {
+    font-size: 1.5vw;
+}
+
+
+
+/* Seccion Cinco (Contacto) */
+.Seccion_cinco {
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.Seccion_cinco--title {
+    font-size: 3vw;
+    padding-left: 0;
+}
+
+.Seccion_cinco__info {
+    padding-left: 0;
+}
+
+.Seccion_cinco p {
+    font-size: 1.5vw;
+    padding-left: 0;
+}
+
+.Seccion_cinco__info a {
+    font-size: 1.5vw;
+    padding-left: 0;
+
+}
+
+.Seccion_cinco__info img {
+    width: 3vw;
+    padding-left: 0;
+}
+
+
+
+/* Seccion Footer (Pie de Pagina) */
+.Footer__redes--icon {
+    width: 3vw;
+}
+
+.Footer--txt {
+    font-size: 1.5vw;
+}
+
 }
